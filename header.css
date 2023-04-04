@@ -1,0 +1,137 @@
+.app {
+ background-color: var(--theme-bg-color);
+ max-width: 1250px;
+ max-height: 860px;
+ height: 90vh;
+ display: flex;
+ flex-direction: column;
+ overflow: hidden;
+ position: relative;
+ width: 100%;
+ border-radius: 14px;
+ backdrop-filter: blur(20px);
+ -webkit-backdrop-filter: blur(20px);
+ font-size: 15px;
+ font-weight: 500;
+}
+
+.header {
+ display: flex;
+ align-items: center;
+ flex-shrink: 0;
+ height: 58px;
+ width: 100%;
+ border-bottom: 1px solid var(--border-color);
+ padding: 0 30px;
+ white-space: nowrap;
+ 
+ 
+}
+ @media screen and (max-width: 480px) {
+  padding : 0 16px;
+ }
+
+ 
+ .header-menu {
+  display: flex;
+  align-items: center;
+}
+ 
+@media screen and (max-width: 610px) {
+    :not(.main-header-link) {
+     display: none;
+    }
+   }
+   
+
+   .notify {
+    position: relative;}
+::before {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    right: 20px;
+    top: 16px;
+   }
+
+ @media screen and (max-width: 1055px) {
+    display: none;
+ }
+
+  
+ 
+
+
+.menu-circle {
+ width: 15px;
+ height: 15px;
+ background-color: #f96057;
+ border-radius: 50%;
+ box-shadow: 24px 0 0 0 #f8ce52, 48px 0 0 0 #5fcf65;
+ flex-shrink: 0;
+ margin-right: 0;
+}
+ @media screen and (max-width: 945px) {
+  display: none;
+ }
+
+
+.header-profile {
+ display: flex;
+ align-items: center;
+ padding: 0 16px 0 40px;
+ margin-left: auto;
+ flex-shrink: 0;
+}
+ svg {
+  width: 22px;
+  color: #f9fafb;
+  flex-shrink: 0;
+ }
+
+
+.notification {
+ position: relative;
+}
+ .notification-number {
+  position: absolute;
+  background-color: #3a6df0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  right: -6px;
+  top: -6px;
+ }
+  svg {
+  margin-left: 22px;
+}
+  @media screen and (max-width: 945px) {
+   display: none;
+  }
+ 
+
+
+.profile-img {
+ width: 32px;
+ height: 32px;
+ border-radius: 50%;
+ object-fit: cover;
+ border: 2px solid var(--theme-color);
+ margin-left: 22px;
+}
+
+.wide {}
+ .header-menu
+ .header-profile {
+  display: none;
+ }
+ 
+ .menu-circle {
+  
+ }
